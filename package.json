@@ -14,7 +14,10 @@
   "author": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run services:up && next dev",
+    "services:up": "docker compose up -d",
+    "services:stop": "docker compose stop",
+    "services:down": "docker compose down",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
@@ -30,6 +33,7 @@
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
+    "@types/react": "19.2.10",
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.1.1",
     "jest": "^30.2.0",
