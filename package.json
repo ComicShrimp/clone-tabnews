@@ -24,10 +24,14 @@
     "lint:fix": "prettier --write .",
     "lint:check": "prettier --check .",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "migration:create": "node-pg-migrate -m infra/migrations create",
+    "migration:up": "node-pg-migrate -m infra/migrations up"
   },
   "dependencies": {
+    "dotenv": "^17.2.4",
     "next": "16.0.10",
+    "node-pg-migrate": "^8.0.4",
     "pg": "^8.17.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
