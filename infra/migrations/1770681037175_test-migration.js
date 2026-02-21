@@ -1,7 +1,7 @@
-export const shorthands = undefined;
-export function up(pgm) {
+module.exports.shorthands = undefined;
+module.exports.up = function (pgm) {
   // UP
-}
-export function down(pgm) {
+};
+module.exports.down = function (pgm) {
   // DOWN
-}
+};
