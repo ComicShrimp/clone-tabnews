@@ -4,7 +4,7 @@ on: pull_request
 
 jobs:
   jest:
-    name: Jest Ubuntu
+    name: Automated Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
