@@ -12,6 +12,7 @@
   },
   "license": "MIT",
   "author": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "npm run services:up && npm run wait-for-postgres && npm run migration:up && next dev",
@@ -41,6 +42,8 @@
     "react-dom": "^19.2.7"
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.2.1",
+    "@commitlint/config-conventional": "^21.2.0",
     "@eslint/js": "^9.7.0",
     "@types/react": "19.2.17",
     "concurrently": "^10.0.3",
